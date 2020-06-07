@@ -12,11 +12,10 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_sms: ^2.0.1+2
+  sms: ^0.2.4
   share: ^0.6.4+3
-  contacts_service: ^0.4.6
-  permission_handler: ^5.0.0+hotfix.8
   shared_preferences: ^0.5.7+3
+  fluttercontactpicker: ^2.3.2
 
   cupertino_icons: ^0.1.3
 
