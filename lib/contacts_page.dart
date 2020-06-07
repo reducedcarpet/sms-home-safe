@@ -45,7 +45,7 @@ class _ContactsPageState extends State<ContactsPage> {
     for (String key in contactMap.keys) {
       contactWidgets.add(
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Row(
             children: [
               Expanded(
@@ -84,10 +84,18 @@ class _ContactsPageState extends State<ContactsPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("SMS Home Safe"),
+        title: Text("Contacts:"),
       ),
       body: ListView(
         children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Center(
+                child: Text(
+              "Send to:",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
+            )),
+          ),
           contacts.isEmpty
               ? Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -152,6 +160,11 @@ class _ContactsPageState extends State<ContactsPage> {
                 },
               ),
             ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+                "This is a list of contacts that your phone will send an SMS message to upon pressing safe/not safe on the other page. \n\nThe numbers can contain the dialling code special characters (+) and also spaces. Anything else, I don't know what will happen. \n\nEntering a contact with the same name as an existing contact will overwrite it. \n\nThe contacts are not saved to your phones contact list, they are only saved in the local data area designated for this app on your phone. It is mildly secure but if someone has access to your unlocked phone, they have access to the list of contacts."),
           ),
         ],
       ),

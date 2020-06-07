@@ -150,6 +150,11 @@ class _SMSPageState extends State<SMSPage> {
                 ),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Text(
+                  "The message sent when you press the 'NOT SAFE!' button. \n\nYou might consider putting in some information ahead of time, if you know it: Where you expect to be taken, any special things you want the people on your list to do in the event of a bad situation. \n\nMessages are sent via SMS to each number on this apps contact list in order. Both messages are stored in the apps local data area. It is not particularly secure if someone has your phone."),
+            ),
           ],
         ),
       ),
