@@ -3,9 +3,10 @@
   "description": "My Project is a project that does awesome things.",
   "sidebar": [
     ["Getting Started", "/"],
+    ["Sub", "/sub"],
     ["Advanced", [
       ["Reference API", "/subdir"],
-      ["Another", "/sub.mdx"]
+      ["Another", "/sub"]
     ]]
   ]
 }
