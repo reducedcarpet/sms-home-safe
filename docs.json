@@ -1,4 +1,10 @@
 {
   "name": "SMS Home Safe",
-  "description": "My Project is a project that does awesome things."
+  "description": "My Project is a project that does awesome things.",
+  "sidebar": [
+    ["Getting Started", "/"],
+    ["Advanced", [
+      ["Reference API", "/subdir"]
+    ]]
+  ]
 }
